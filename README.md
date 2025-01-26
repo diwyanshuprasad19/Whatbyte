@@ -23,9 +23,9 @@ Install all the required dependencies listed in requirements.txt:
 
 Create the logs directory to store email logs:
 
-### mkdir -p /{Relative Path to the project}/Whatbyte/backend/logs/emails
+### mkdir -p /{Relative Path to the project}/Whatbyte/logs/emails
 
-### chmod -R 755 /{Relative Path to the project}/Whatbyte/backend/logs/emails
+### chmod -R 755 /{Relative Path to the project}/Whatbyte/logs/emails
 
 Use pwd if want to find path to the project
 
