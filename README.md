@@ -6,29 +6,37 @@ Link:https://docs.google.com/document/d/1LPiKM5RvpfkaN4ntg9atcW2-Ef5Ohx094Pe5570
 
 Setup Instructions
 1. Create a Virtual Environment
+
 To isolate the dependencies of the project, create a Python virtual environment:
 ### python3 -m venv venv
 
 Activate the virtual environment:
+
 ### source venv/bin/activate
 
 2. Install Required Dependencies
+
 Install all the required dependencies listed in requirements.txt:
 ### pip install -r requirements.txt
 
 4. Create the Logs Directory
+
 Create the logs directory to store email logs:
 
 ### mkdir -p /{Relative Path to the project}/Whatbyte/backend/logs/emails
+
 ### chmod -R 755 /{Relative Path to the project}/Whatbyte/backend/logs/emails
+
 Use pwd if want to find path to the project
 
 4. Run Migrations
+
 Run the Django migrations to set up the database schema:
 
 ### python manage.py migrate
 
 5. Create a Superuser
+
 You can log in to the Django admin panel with the these credentials:
 
 ### Username: admin@local.com
@@ -39,19 +47,24 @@ Otherwise run this command to create the superuser:
 ### python manage.py createsuperuser
 
 6. Start the Development Server
+
 Run the development server:
 
 ### python manage.py runserver
+
 Your application will now be running at http://127.0.0.1:8000/.
 
 
 Running the Application
+
 1. Open the Login Page
+
 To access the login page, navigate to:
 
 ### http://127.0.0.1:8000/account/login/
 
 2. Admin Panel
+
 After creating the superuser account, you can access the Django admin panel using the following URL:
 
 ### http://127.0.0.1:8000/admin/
@@ -60,7 +73,9 @@ Use the superuser credentials (admin@local.com / 12345) to log in.
 
 
 ## Additional Enhancements & Notes
-### Development Only (Not for Production)
+
+### For Production
+
 1.Environment: This application is designed primarily for development purposes and is not optimized for a production environment.
 
 2.Custom User Model: For better scalability and flexibility, consider using a custom user model instead of the default Django user model. This allows for greater customization in the future, especially when handling user data.
@@ -74,7 +89,9 @@ Use the superuser credentials (admin@local.com / 12345) to log in.
 6.Request/Response Logging: You can implement request/response logging to track API calls or user interactions on certain endpoints, helping monitor the performance and usage of your application.
 
 7.Separation of Concerns: For a more scalable project structure, consider separating the frontend (React or any other JS framework) and backend (Django REST Framework) into distinct repositories. This helps in better maintainability and cleaner architecture.
+
   Frontend: React (or any JS framework) for a dynamic and responsive user interface.
+
   Backend: Django Rest Framework (DRF) for creating APIs, with Django handling user authentication and management.
 
 
