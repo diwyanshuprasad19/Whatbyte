@@ -1,4 +1,4 @@
-DjangoAuthKit Application
+# Whatbyte Assignment
 This is a Django-based web application that implements user authentication and management. The project provides essential features such as login, signup, password management, and restricted access based on user authentication.
 
 Features
