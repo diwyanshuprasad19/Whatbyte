@@ -2,6 +2,8 @@
 
 ## This is a Django-based web application developed as part of the Whatbyte assignment. It includes user authentication, user account management, password reset, and a dashboard with various user functionalities. This guide will help you set up and run the project on your local machine.
 
+Link:https://docs.google.com/document/d/1LPiKM5RvpfkaN4ntg9atcW2-Ef5Ohx094Pe5570cWBU/edit?tab=t.0
+
 Setup Instructions
 1. Create a Virtual Environment
 To isolate the dependencies of the project, create a Python virtual environment:
