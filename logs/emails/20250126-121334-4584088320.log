@@ -1,0 +1,26 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Subject: Password reset on 127.0.0.1:8000
+From: admin@example.com
+To: dummy2@gmail.com
+Date: Sun, 26 Jan 2025 12:13:34 -0000
+Message-ID: 
+ <173789361454.6726.17850216994624023994@1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa>
+
+
+You're receiving this email because you requested a password reset for your user account at 127.0.0.1:8000.
+
+Please go to the following page and choose a new password:
+
+http://127.0.0.1:8000/account/password-reset-confirm/MTA/ck8kmm-cf3b06ddd9fd3bf554726653ac6260ee/
+
+Your username, in case you’ve forgotten: dummy2
+
+Thanks for using our site!
+
+The 127.0.0.1:8000 team
+
+
+
+-------------------------------------------------------------------------------

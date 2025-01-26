@@ -4,3 +4,8 @@ ERROR 2025-01-26 08:35:02,036 service Failed to send password reset email to tes
 ERROR 2025-01-26 08:35:09,046 service Failed to send password reset email to testuser@example.com: No module named 'webapp.account'
 INFO 2025-01-26 09:08:54,649 service Welcome email successfully sent to user3@gmail.com.
 INFO 2025-01-26 10:50:22,512 service Welcome email successfully sent to user4@gmail.com.
+INFO 2025-01-26 11:32:17,591 service Welcome email successfully sent to user5@gmail.com.
+INFO 2025-01-26 11:35:09,465 service Welcome email successfully sent to test@gmail.com.
+INFO 2025-01-26 11:57:14,189 service Welcome email successfully sent to test1@gmail.com.
+INFO 2025-01-26 12:04:48,913 service Welcome email successfully sent to dummy@gmail.com.
+INFO 2025-01-26 12:12:01,218 service Welcome email successfully sent to dummy2@gmail.com.

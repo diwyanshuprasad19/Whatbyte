@@ -1,3 +1,4 @@
+import logging
 from django import forms
 from django.contrib.auth.forms import (
     AuthenticationForm,
@@ -10,6 +11,10 @@ from django.contrib.auth.models import User
 from django.core.exceptions import ValidationError
 from django.contrib.auth import authenticate
 import re
+
+# Set up logging for debugging
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.DEBUG)
 
 
 # Helper function to validate passwords
@@ -25,7 +30,7 @@ def validate_password_strength(password):
     return password
 
 
-class LoginForm(AuthenticationForm):
+class LoginForm(forms.Form):
     username = forms.CharField(
         label="Username or Email",
         widget=forms.TextInput(attrs={"class": "form-control", "placeholder": "Enter your username or email"}),
@@ -37,12 +42,45 @@ class LoginForm(AuthenticationForm):
 
     def clean(self):
         cleaned_data = super().clean()
-        username = cleaned_data.get("username")
+        username_or_email = cleaned_data.get("username")
         password = cleaned_data.get("password")
 
-        if username and password:
-            user = authenticate(username=username, password=password)
-            if not user:
+        if username_or_email and password:
+            user = None
+            # Debugging: Log what the user inputs
+            logger.debug(f"Login attempt with: {username_or_email} and password: {password}")
+
+            # Check if the input is an email or username
+            if '@' in username_or_email:
+                # Debugging: Log the email search process
+                logger.debug(f"Attempting to find user by email: {username_or_email}")
+                try:
+                    user = User.objects.get(email=username_or_email)
+                    logger.debug(f"User found by email: {user.username}")
+                except User.DoesNotExist:
+                    logger.error(f"User with email {username_or_email} not found.")
+                    raise ValidationError("No user with this email found.")
+            else:
+                # Debugging: Log the username search process
+                logger.debug(f"Attempting to find user by username: {username_or_email}")
+                try:
+                    user = User.objects.get(username=username_or_email)
+                    logger.debug(f"User found by username: {user.username}")
+                except User.DoesNotExist:
+                    logger.error(f"User with username {username_or_email} not found.")
+                    raise ValidationError("No user with this username found.")
+            
+            # Now authenticate the user with the username and password
+            if user:
+                logger.debug(f"Attempting to authenticate user: {user.username}")
+                user = authenticate(username=user.username, password=password)
+                if not user:
+                    logger.error("Invalid username or password.")
+                    raise ValidationError("Invalid username or password.")
+                else:
+                    logger.debug(f"User authenticated successfully: {user.username}")
+            else:
+                logger.error("User not found.")
                 raise ValidationError("Invalid username or password.")
         return cleaned_data
 
