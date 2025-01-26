@@ -1,0 +1,4 @@
+Django                # Core Django framework
+djangorestframework   # REST framework for building APIs
+django-cors-headers   # Middleware for handling Cross-Origin Resource Sharing (CORS)
+django-environ        # Environment variable management

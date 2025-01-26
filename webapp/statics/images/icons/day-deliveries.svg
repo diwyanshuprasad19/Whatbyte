@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 92 92" style="enable-background:new 0 0 92 92;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#EFEBC8;}
+	.st1{fill:none;stroke:#010101;stroke-width:4;}
+	.st2{fill:none;stroke:#010101;stroke-width:4;stroke-linecap:round;}
+</style>
+<circle class="st0" cx="46.1" cy="46.1" r="45.9"/>
+<title>Day Deliveries</title>
+<g id="Day_Deliveries">
+	<g id="Group_47">
+		<circle id="Ellipse_45" class="st1" cx="45.5" cy="46.5" r="13.2"/>
+		<path id="Path_209" class="st2" d="M45.5,25.7v-9.4"/>
+		<path id="Path_210" class="st2" d="M45.5,76.8v-9.4"/>
+		<path id="Path_211" class="st2" d="M66.3,46.5h9.4"/>
+		<path id="Path_212" class="st2" d="M15.2,46.5h9.4"/>
+		<path id="Path_213" class="st2" d="M60.2,31.8l6.7-6.7"/>
+		<path id="Path_214" class="st2" d="M24.1,67.9l6.7-6.7"/>
+		<path id="Path_215" class="st2" d="M60.2,61.2l6.7,6.7"/>
+		<path id="Path_216" class="st2" d="M24.1,25.1l6.7,6.7"/>
+	</g>
+</g>
+</svg>

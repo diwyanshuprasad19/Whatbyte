@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div style="text-align: center;">
+    <h2>Welcome to My App</h2>
+    <p>This is the home page for the application. Please log in to access your account.</p>
+    <a href="{% url 'login' %}" style="margin-right: 10px;">Login</a>
+    <a href="{% url 'signup' %}">Sign Up</a>
+</div>
+{% endblock %}

@@ -1,0 +1,75 @@
+html{
+    height: 100vh;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 100%;
+    color:#000;
+    margin: 0;
+    padding: 0;
+    height:100vh;
+    overflow:hidden;
+}
+
+a:hover{text-decoration: none;}
+
+.app-header{height:6vh;margin:1vh 1vw;width: 98vw;border:1px solid #000;}
+.back-button{position:absolute;width:auto;padding: 1vh;height: 6vh;font-size: 2.5vh;line-height: 2.5vh;max-width:200px;display:table;background: #198CFF;color: #fff;}
+.back-button span {vertical-align: middle;line-height: normal;display: table-cell;}
+.back-button span.glyphicon{top: -1px;}
+.back-button-text{padding: 0 0.2vh;}
+.header-text-wrapper{width:98vw;font-size: 4vh;text-align: center;line-height: 4vh;display: table;height:6vh;}
+.header-text{vertical-align: middle;line-height: normal;display: table-cell;s}
+.top-wrapper{height:82vh;border:1px solid #000;width:98vw;margin:0 1vw 1vh 1vw;}
+.action-buttons{width:98vw;height:8vh;margin:1vh 1vw;}
+.action-buttons .next-btn{display:block;height:8vh;width:98vw;background:#26a69a;color:#fff;cursor:pointer;line-height: 8vh;font-size:4vh;text-align: center;}
+
+.fleft{float:left;}
+.select-box{border-style: solid;border-color: #26a69a;position:absolute;top:0;z-index: 2;height:15vh;border-width:1vh;}
+/*.clearfix{clear:both;}*/
+
+.swipe-selector {
+    width: 98vw;
+    height: 15vh;
+    overflow:hidden;
+    border: 1px solid #000;
+    margin:1vh 0;
+    position: relative;
+}
+.range-swiper {
+    position:relative;
+    padding: 1vh 1vw;
+    width: 98vw;
+    height: 15vh;
+    overflow:hidden;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 4vh;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide-active{font-weight: bold;font-size:6vh;}
+
+.question-content-wrapper{margin:1vh 0;text-align: center;}
+.question-media-wrapper{width:20vw;height:15vh;display:inline-block;overflow:hidden;vertical-align:top;}
+.question-media-wrapper img{width:100%;height:auto;}
+.question-text-wrapper{width:40vw;height:15vh;display:inline-block;font-size: 3vh;vertical-align:top;line-height: 15vh;}
+.question-text-wrapper span {display: inline-block;vertical-align: middle;line-height: normal;}
+
+

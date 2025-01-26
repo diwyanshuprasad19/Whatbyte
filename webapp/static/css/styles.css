@@ -1,0 +1,129 @@
+.header.section {
+  padding: 0px 0px;
+}
+.hero-main {
+  box-shadow: 0 1px 0 0 rgba(0,0,0,.05),0 2px 4px 0 rgba(0,0,0,.06);
+}
+.content-a {
+  background: #f1f1f1;
+}
+.center-content {
+  text-align: center;
+}
+.clear {
+  clear: both;
+}
+.value-props {
+  padding: 2.5rem .5rem;
+}
+.content {
+  padding: 2.5rem .5rem;
+  border-top: 1px solid #ccc;
+}
+.content-last {
+  border-bottom: 1px solid #ccc;
+}
+.footer {
+  padding: .5rem 0rem;
+  color: #333;
+}
+.footer a {
+  color: #222;
+}
+.video-wrapper {
+    float: none;
+    clear: both;
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+}
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+img.responsive {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+.team-member-img > img {
+  border-radius: 100%;
+  vertical-align: middle;
+}
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn
+}
+.team-member-img:hover .social-profile {
+  background:rgba(0, 128, 255, 0.5);
+  display: block;
+  -webkit-animation: fadeIn 400ms;
+  animation: fadeIn 400ms;
+  -webkit-transition: all 0.9s ease;
+  -moz-transition: all 0.9s ease;
+  -ms-transition: all 0.9s ease;
+  -o-transition: all 0.9s ease;
+  transition: all 0.9s ease;
+}
+.social-profile {
+  background: none repeat scroll 0 0 rgba(0, 128, 255, 0.5);
+  display: none;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+.social-profile ul {
+  display: inline-block;
+  padding: 0;
+  position: relative;
+  top: 60%;
+}
+
+.social-profile ul li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.social-profile ul li a {
+  text-align: center;
+}
+
+.team-member-img {
+  margin: 0px auto;
+  position: relative;
+  border-radius: 100%;
+  display: inline-block;
+  overflow: hidden;
+}
+@media (min-width: 550px) {
+  h3 {
+      font-size: 2.1rem;
+  }
+}
